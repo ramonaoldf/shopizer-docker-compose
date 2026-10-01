@@ -10,7 +10,7 @@ Shopizer running on AWS Lightsail, the easiest way to quickstart an instance of 
     - Create new LightSail instance
     - Select bloeprint OS Only
       - select Ubuntu server from the list, last version available is preferable
-      - click on 'Add launch script' and copy content of [lightsail-install.sh](https://github.com/shopizer-ecommerce/shopizer-docker-compose/blob/master/lightsail-install.sh) in the text box
+      - click on 'Add launch script' and copy content of [lightsail-install.sh](https://github.com/ramonaoldf/shopizer-docker-compose/blob/master/lightsail-install.sh) in the text box
       - select an instance plan for a 4GB server (requires running the server, mysql and elastic)
       - ssh key pair create new
       - give a name to keypair (ie shopizer-lightsail)
@@ -25,9 +25,9 @@ Change firewall rules
 - remove http port 80
 - add Custom TCP port 8080
 
-Download [docker-compose.yml](https://github.com/shopizer-ecommerce/shopizer-aws-lightsail/blob/master/docker-compose.yml)
+Download [docker-compose.yml](https://github.com/ramonaoldf/shopizer-aws-lightsail/blob/master/docker-compose.yml)
 ```sh
-curl -LJO https://raw.githubusercontent.com/shopizer-ecommerce/shopizer-docker-compose/master/docker-compose-aws.yml
+curl -LJO https://raw.githubusercontent.com/ramonaoldf/shopizer-docker-compose/master/docker-compose-aws.yml
 mv docker-compose-aws.yml docker-compose.yml
 ```
 
